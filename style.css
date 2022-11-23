@@ -1,0 +1,76 @@
+.parent{
+    height:100vh;
+    display: grid;
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar content"
+    "sidebar footer";
+    grid-template-rows: 30% 60% 10%;
+    grid-template-columns: 15% 85%;
+}
+.header{
+    grid-area: header;
+    background-color: #D0B49F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1{
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+.content{
+    grid-area: content;
+    background-color: #E4D4C8;
+}
+.icecreams{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.chocolate img,.mint_chocolate_chip img,.strawberry img,.cookies_and_cream img{
+    width:200px;
+    height: 250px;
+    object-fit: cover;
+}
+.footer{
+    grid-area: footer;
+    background-color:hsl(26, 63%, 20%);
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: #A47551;
+}
+body{
+
+margin: 0px;
+}
+li{
+list-style: none;
+background-color:#AB6B51;
+margin: 20px;
+text-align: center;
+padding-top: 8px ;
+padding-bottom: 8px;
+border-radius: 30%;
+}
+
+a:link{
+text-decoration: none;
+
+}
+
+a:hover{
+
+    color: #dbd9d9;
+
+
+}
+li:hover{
+
+background-color: #794531;
+
+
+}
